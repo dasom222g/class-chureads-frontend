@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   const handleDelete = (selectedItem) => {
-    const filterList = feedList.filter((item) => item.id !== selectedItem.id);
+    const filterList = feedList.filter((item) => item._id !== selectedItem._id);
     setFeedList(filterList);
 
     // TODO: 백엔드에 Delete 요청
