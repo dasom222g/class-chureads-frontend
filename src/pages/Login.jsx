@@ -5,6 +5,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase";
 
+// 미션: 이미 로그인된 사용자는 login페이지 접근불가
+// Home페이지로 리다이렉트 시키기
+
 const Login = () => {
   // logic
   const history = useNavigate();
