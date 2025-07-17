@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Nav from "../components/layout/Nav";
 import FeedItem from "../components/FeedItem";
-import { initialTags } from "../data/response";
 import { useNavigate } from "react-router-dom";
 import { auth } from '../firebase';
 
@@ -86,8 +85,8 @@ const Home = () => {
               <FeedItem
                 key={feed._id}
                 data={feed}
-                tags={initialTags}
-                isAuthor={true}
+                tags={feed.tags}
+                isAuthor={feed.userId === currentUser.uid}
                 onDelete={handleDelete}
                 onEdit={handleEdit}
                 onLike={handleLike}
