@@ -1,5 +1,4 @@
-# Getting Started with Create React App
-
+# 멀티캠퍼스 강의용 - 1기 완성본
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
